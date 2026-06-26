@@ -32,10 +32,6 @@ body {
   border: $stopwatch-border-width dotted $stopwatch-border-color;
   border-radius: $stopwatch-radius;
 
-  &--speed-up {
-    --seconds-duration: #{$speed-up-duration};
-  }
-
   &__minutes-hand {
     position: absolute;
     bottom: $stopwatch-center-position;
@@ -69,6 +65,10 @@ body {
     border-radius: $stopwatch-radius;
     background-color: $center-color;
   }
+}
+
+.stopwatch--speed-up {
+  --seconds-duration: #{$speed-up-duration};
 }
 
 @keyframes hand-rotate {
